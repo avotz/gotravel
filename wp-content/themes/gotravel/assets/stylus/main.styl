@@ -1,0 +1,711 @@
+
+@import "nib"
+@import "normalize.styl"
+@import "icons.styl"
+
+
+rosa = #E1477D
+gris = #858D93
+verde = #54b200
+celeste = #00AECB
+rojo = #e32b0c
+
+*
+	box-sizing border-box
+body
+	font-family 'Ubuntu', sans-serif
+	font-size 16px
+	line-height 25px
+	
+
+ul
+	margin 0
+	padding 0
+
+a 
+	text-decoration none
+	color verde
+p 
+	margin-top 0
+h1
+h2
+h3
+	color verde
+	text-transform uppercase
+.btn
+	display inline-block
+	padding: 10px 20px;
+	//width 215px
+	background none repeat scroll 0 0 rojo
+	box-shadow 0 2px 5px 0 rgba(0, 0, 0, 0.47)
+	color #FFE9F1
+	text-transform uppercase
+	text-shadow 0 -1px 2px rgba(144, 15, 60, 0.76)
+	font-weight 700
+	font-size .8rem
+	text-align center
+	
+.footer
+	font-size 11px
+	color gris
+	overflow hidden
+	padding 31px 0 25px 5px
+	text-align center
+
+	
+.header
+	position relative
+	z-index 1000
+	padding 10px 0 17px
+	height 93px
+	border-top 6px solid verde
+	.inner
+		position relative
+		
+	&-btn-menu
+		position: absolute;
+		right: 1rem;
+		bottom: -70px//.5rem;
+		background-color transparent
+		border none
+		color verde
+		font-size 1.5rem
+		outline none
+
+.inner
+	max-width 940px
+	margin 0 auto
+	padding 0 1rem
+	//position relative
+
+@media only screen and (min-width: 768px)
+	.inner
+		padding 0
+.logo 
+	float left 
+	margin 5px 5px 0 0
+	width 120px
+	height 60px
+	img 
+		width 100%
+
+.menu
+	position absolute
+	top 68px
+	left 0
+	right 0
+	background-color verde
+	margin-top 1.2em 
+	z-index 999
+	display none
+	li 
+		display block
+
+		a 
+			display block 
+			color white//gris 
+			padding .5em
+			border-bottom 1px solid white
+			
+			&:hover 
+				text-decoration underline
+		
+		&:nth-child(6)
+			a
+				border none
+
+@media only screen and (min-width: 768px)
+	.header
+		&-btn-menu
+			display none
+	.logo 
+		margin 5px 35px 0 0
+	.menu
+		float left
+		position static
+		display block !important
+		background-color transparent
+		li 
+			display inline-block
+			vertical-align top
+			a 
+				color gris
+				padding 0 .5em
+				border-right 1px solid gris
+
+			
+.header-search
+	float right
+	background #EEE
+	border 1px solid #DDD
+	position relative
+	margin-top -10px
+
+	input[type="text"]
+	input[type="search"]
+		float left
+		padding 10px 35px 8px 10px
+		width 150px
+		height 17px
+		border none
+		background: none
+		color #B9B8B8
+		text-transform uppercase
+		line-height 17px
+	&:after
+		font-family 'cincoceibas'
+		content "\f002"
+		position absolute
+		color rojo
+		right 10px
+		top 2px
+		font-size 1.3em
+
+@media only screen and (min-width: 768px)
+	.header-search
+		margin-top 1em
+.book 
+	position absolute
+	top 77px//87px
+	right 0
+	z-index 760
+	display block
+	padding: 15px 0 15px 6px;
+	width 215px
+	border-radius 0 0 6px 6px
+	background none repeat scroll 0 0 rojo
+	box-shadow 0 2px 5px 0 rgba(0, 0, 0, 0.47)
+	color #FFE9F1
+	text-transform uppercase
+	text-shadow 0 -1px 2px rgba(144, 15, 60, 0.76)
+	font-weight 700
+	font-size .8rem
+	&.fixed
+		position fixed
+		top	0
+		right 4rem
+
+	.icon-book
+		font-size 1.5em
+		padding-right .5em
+		vertical-align  middle
+		color verde
+	
+.banner
+	height 571px
+	display none
+	position relative
+	
+	.slide
+		background-position center  center
+		background-repeat no-repeat
+		background-size cover, cover
+		height 571px
+		width 100%
+	img
+		width 100%
+	.splash
+		position absolute
+		bottom 20%
+		width 340px
+		padding 15px 10px 27px 19px
+		border-radius 0 0 5px 5px
+		background rgba(0, 0, 0, 0.6)
+		
+		&.left
+			left 18%
+		
+		&.right
+			right 18%		
+		
+	h2
+		text-transform uppercase
+		color #FFF
+		font-weight 700
+		//font-family georgia
+		line-height 1em
+		margin 0
+	span 
+		font-family Ubuntu
+		color verde 
+		font-weight 700
+
+	#banner-pager 
+		span 
+			position absolute
+			top 45%
+			left 20px
+			z-index 9999
+			font-size 7em
+			cursor pointer
+			color rgba(255, 255, 255, .75)
+
+		.next
+			right 20px
+			left auto
+			
+			
+
+.caption-banner
+	position absolute
+	bottom 0
+	z-index 999
+	margin 0
+	width 100%
+	height 67px
+	background rgba(0, 0, 0, 0.5)
+	
+	.email
+	.follow
+		display inline-block
+		vertical-align top
+		width 275px
+		height 67px
+		padding 18px 10px 15px 39px
+		background linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.3) 100%)
+		margin-right -3px
+		&:hover 
+			background linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.65) 100%)
+	
+	.email
+		
+		i 
+			font-size 2em
+			color #FFF
+			float left
+			padding-right .5em
+		a
+			display block
+			color #FFF
+			text-transform uppercase
+			font-weight bold
+
+			span 
+				display block
+				color #C6C6C6
+				text-transform none
+				font-size 14px
+				line-height 15px
+	.follow
+		width 435px
+		color #FFF
+		text-transform uppercase
+		font-weight bold
+
+		span 
+			display block
+			color #C6C6C6
+			text-transform none
+			font-size 14px
+			line-height 15px
+
+		a 
+			display inline-block
+			vertical-align top
+			color rojo
+			padding .2em
+			font-size 1.5em
+			margin-top -20px
+@media only screen and (min-width: 768px)
+	.banner
+		display block
+.section-top
+	overflow hidden
+	padding 26px 0 30px
+	border-bottom #E6E6E6 solid 1px
+	background url(./img/bg-featured.png) repeat-x #D4D2D2
+.featured-tours
+	text-align center
+	position relative
+	
+	.prev
+	.next
+	.owl-prev
+	.owl-next
+		position absolute
+		top 45%
+		left 0 
+		background verde
+		width 50px 
+		height 50px
+		cursor pointer
+		border-radius 50%
+		z-index 1
+
+		i 
+			display block
+			padding-top 5px
+			font-size 2em
+			color #FFF
+	.next
+	.owl-next
+		right 0
+		left auto
+.home
+	.tour 
+		.img-frame
+			border none
+			overflow hidden
+			img
+				transition all .2s ease
+			&:hover
+				img
+					transform: scale(1.3);
+					//opacity: 0.7;
+.tour
+	display inline-block
+
+	.img-frame
+		position relative
+		float left
+		overflow hidden
+		width 300px
+		height 269px
+		border 10px solid #FFF 
+		//border-radius 269px
+		box-shadow 0px 2px 5px 0px rgba(0, 0, 0, 0.1)
+		z-index: 1;
+
+		img 
+			display: block;
+			width 100%
+			//width 269px
+			//height 269px
+			//border-radius 269px
+		.caption
+			position absolute
+			bottom 22px
+			left 0px
+			display table
+			padding 0 10px
+			width 100%//249px
+			height 56px
+			background rojo
+			color #FFF
+			text-align center
+		.box 
+			display table-cell
+			vertical-align middle
+		h2 
+			text-transform uppercase
+			margin 0 
+			padding 0
+			line-height 20px
+		a 
+			display block
+			margin 0 0 2px
+			color #FFF
+			font-size 11px 
+			//font-family georgia
+
+			&:hover 
+				text-decoration underline
+			
+		span 
+			font-size 13px
+
+.main 
+	//overflow hidden
+	padding 35px 0 0
+	border-top #F7F7F7 solid 1px
+	background linear-gradient(to bottom, #E2F0F1 0%, #FFF 100%) repeat scroll 0 0 rgba(0, 0, 0, 0)
+.home-container
+	display flex
+	flex-wrap wrap
+	justify-content space-between
+
+.shuttle
+	padding-top 3rem
+	padding-bottom 3rem
+	text-align center
+	&-title
+		margin-bottom 0
+	&-subtitle
+		position relative
+		padding-bottom .5rem
+		text-transform uppercase
+		&:after
+			position: absolute;
+			display: block;
+			content: "";
+			width: 40px;
+			height: 3px;
+			bottom: 0;
+			left: 50%;
+			margin-left: -20px;
+			background-color turquesa
+	&-container
+		display flex
+		flex-wrap wrap
+		justify-content space-around
+		text-align left
+	&-ul 
+		list-style none
+		li 
+			&:before
+				content '\f207'
+				font-family 'FontAwesome'
+				padding-right .5rem
+				color turquesa
+	.fleet
+		margin-top 2rem				
+.map-box
+	//float left
+	width 100%
+	h1 
+		text-transform uppercase
+		color verde
+	iframe 
+		border 10px solid #fff
+		width 100%
+.form-book
+.wpcf7
+	//float right
+	width 100%
+
+	h1 
+		text-transform uppercase
+		color verde
+	p 
+		margin-bottom 6px
+		margin-top 0
+		//#formulario, #formularioC
+			
+	label
+		//display inline-block
+		font-size 14px
+		margin-bottom 2px
+		color rojo
+
+	label.error
+		color $naranja
+	
+	input[type="text"],input[type="email"],textarea, select,input[type="number"]
+		appearance none
+		background-color #fff 
+		background-image linear-gradient(#eee 1%, #fff 15%) 
+		border 1px solid #AAA
+		color #444
+		width 100%
+		height 23px
+		box-shadow 0 0 3px #fff inset,0 1px 1px rgba(0,0,0,0.1)
+	textarea
+		height 90px
+	
+	
+	.wpcf7-submit,input[type="submit"]
+		background rojo
+		border none
+		clear both
+		color white
+		cursor pointer
+		float right
+		font-size 12px
+		height 26px
+		margin-right 4px
+		width 80px
+
+	.mensaje
+		margin-top 15px
+		text-align left
+		span
+			border-radius 5px
+			padding 0.5em
+			width 85%
+		.ok
+			background verde
+			border 1px solid #d6e9c6
+		.error
+			background rojo
+			border 1px solid #eed3d7	
+@media only screen and (min-width: 950px)
+	.map-box
+		width 540px
+	.form-book
+	.wpcf7
+		width 380px
+.wpcf7
+	float none
+.request-popup
+	.wpcf7
+		width 100%
+.wpcf7-not-valid-tip
+	background-color rojo
+	color white !important
+.select2-container
+	width 100% !important
+.select2-container--default .select2-selection--multiple
+	border-radius 0 !important
+	border-color #AAA
+	border none
+.select2-container--default .select2-selection--multiple .select2-selection__choice
+	background-color verde !important
+	border-color verde !important
+	color white
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove
+	color white !important
+.section-bottom
+	border-bottom  9px solid #ECEAEA 
+	font-family Arial, Helvetica, sans-serif
+	background: linear-gradient(to bottom, #F8F9F9 0%, #EFEFEF 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	
+.box-message
+	font-family Ubuntu
+	clearfix()
+	.image
+		display inline-block
+		float left
+		margin 0 26px -9px 0
+		padding 13px 0 0 11px
+		width 120px
+		height 104px
+		//background url(./img/bg-frame.png) no-repeat
+		vertical-align middle
+	.content
+		display inline-block
+		padding 20px 0 0
+		max-width 740px
+		vertical-align middle
+	h5 
+		margin 0
+		color rojo
+		font-size 14px
+		line-height 18px
+	p 
+		margin 0 0 10px
+		font-size 12px
+		line-height 18px
+.copyright
+	
+	a 
+		color gris
+		display block
+	i 
+		font-size: 5em;
+		
+.redes
+	text-align center
+	a 
+		display inline-block
+		margin .2em
+		color rojo
+		font-size 3em
+@media only screen and (min-width: 768px)
+	.copyright
+		float left
+		a 
+			display: inline-block;
+			vertical-align: top;
+		i 
+			vertical-align middle
+			margin-top -17px
+			margin-right 5px
+			float left
+	.redes
+		float right
+		margin-top -10px 
+		
+.widget_search 
+	.screen-reader-text
+		display none
+	.search-submit
+		display none
+	
+.entry-container
+	display flex
+	flex-wrap wrap
+	justify-content space-between
+.entry-aside
+	width 100%
+	
+.entry-aside	
+.entry-content
+	ul 
+		margin-left 45px
+		margin-bottom 1rem 
+		
+.entry-main
+	width 100%
+	
+.banner-section
+	height 400px
+	.slide 
+		height 400px
+.tours-container
+	margin-bottom 1rem
+	display flex
+	flex-wrap wrap
+	justify-content space-around
+	.tour
+		margin-bottom 1rem
+.pagination
+	.screen-reader-text
+		display none
+	.nav-links
+		border-top 1px solid #e3e3e3
+		padding .5rem 0
+		text-align center
+	.page-numbers
+		color white
+		background-color rojo
+		padding .5rem
+		&.current
+			background-color verde
+@media only screen and (min-width: 1600px)
+	.banner-section
+		height 500px
+		.slide
+			height 500px
+			
+@media only screen and (min-width: 768px)
+	.entry-aside
+		width 35%
+	.entry-main
+		width 60%
+.table
+	thead
+		tr
+			background-color verde
+			color white
+.ul-include
+	font-size 12px
+	ul 
+		margin-left 45px
+.two-columns{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+  
+}
+.two-columns .column{
+  width: 100%;
+}
+.two-columns > p{
+    width: 100%;
+}
+@media screen and (min-width: 768px){
+  .two-columns .column{
+    width: 45%;
+  }
+  .two-columns > p{
+      width: 45%;
+  }
+
+}
+
+.form-two-columns{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.form-two-columns .column{
+    width: 100%;
+}
+@media screen and (min-width: 540px)
+{
+    .form-two-columns .column{
+        width: 45%;
+    }
+}
+@import "tables.styl"
