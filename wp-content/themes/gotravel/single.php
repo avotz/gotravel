@@ -11,20 +11,34 @@ get_header(); ?>
 	<?php if ( 'tour' === get_post_type() ) :?>
 	<section class="banner banner-section">
 	    
-	    
+	    	
 	        <?php if ( has_post_thumbnail() ) :
 
 		  	 	$id = get_post_thumbnail_id($post->ID);
 		  	 	$thumb_url = wp_get_attachment_image_src($id,'tour-banner', true);
 		  	 	?>
-		    	
-		    	 <div class="slide" style="background-image: url('<?php echo $thumb_url[0] ?>');">
-	            
-		               
-		            
-		        </div>
+		  	 	<div id="banner-pager">
+			            <span class="prev "><i class="icon-angle-left"></i></span>
+			            <span class="next "><i class="icon-angle-right"></i></span>
+			    </div>
+		    	 <div class="cycle-slideshow" data-cycle-slides=".slide" data-cycle-prev=".prev" data-cycle-next=".next">
+		    	 	<div class="slide" style="background-image: url('<?php echo $thumb_url[0] ?>');"></div>
+		    	 	<?php $photos = rwmb_meta( 'rw_gallery_thumb', 'type=image&size=tour-banner' ); 
+		             if ( $photos ) {
+		                   
+		                foreach ( $photos as $photo ){
+		                           
+		                        ?>
+		                        
+		                         <div class="slide" style="background-image: url('<?php echo $photo['url'] ?>');"></div>
+		                      
+		                      <?php } 
+
+		      
+		              }
+		            ?>
 				
-			
+			 	 </div>
 			<?php else : ?>
 
 				<div id="banner-pager">

@@ -48,6 +48,7 @@ get_header(); ?>
                           </div>
                       </div>
                   </div>
+                  <a href="<?php the_permalink(); ?>"></a>
               </div>
 
 			<?php endwhile;?>

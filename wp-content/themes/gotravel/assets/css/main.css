@@ -575,7 +575,7 @@ ul {
 }
 a {
   text-decoration: none;
-  color: #54b200;
+  color: #483b27;
 }
 p {
   margin-top: 0;
@@ -583,13 +583,13 @@ p {
 h1,
 h2,
 h3 {
-  color: #54b200;
+  color: #df6734;
   text-transform: uppercase;
 }
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background: none repeat scroll 0 0 #e32b0c;
+  background: none repeat scroll 0 0 #df6734;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.47);
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.47);
   color: #ffe9f1;
@@ -611,7 +611,7 @@ h3 {
   z-index: 1000;
   padding: 10px 0 17px;
   height: 93px;
-  border-top: 6px solid #54b200;
+  border-top: 6px solid #483b27;
 }
 .header .inner {
   position: relative;
@@ -638,8 +638,8 @@ h3 {
 }
 .logo {
   float: left;
-  margin: 5px 5px 0 0;
-  width: 120px;
+  margin: -7px 5px 0 0;
+  width: 90px;
   height: 60px;
 }
 .logo img {
@@ -675,7 +675,8 @@ h3 {
     display: none;
   }
   .logo {
-    margin: 5px 35px 0 0;
+    margin: -5px 35px 0 0;
+    width: 120px;
   }
   .menu {
     float: left;
@@ -716,7 +717,7 @@ h3 {
   font-family: 'cincoceibas';
   content: "\f002";
   position: absolute;
-  color: #e32b0c;
+  color: #df6734;
   right: 10px;
   top: 2px;
   font-size: 1.3em;
@@ -735,7 +736,7 @@ h3 {
   padding: 15px 0 15px 6px;
   width: 215px;
   border-radius: 0 0 6px 6px;
-  background: none repeat scroll 0 0 #e32b0c;
+  background: none repeat scroll 0 0 #df6734;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.47);
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.47);
   color: #ffe9f1;
@@ -753,7 +754,7 @@ h3 {
   font-size: 1.5em;
   padding-right: 0.5em;
   vertical-align: middle;
-  color: #54b200;
+  color: #ee993b;
 }
 .banner {
   height: 571px;
@@ -793,9 +794,12 @@ h3 {
   line-height: 1em;
   margin: 0;
 }
+.banner a {
+  color: #fff;
+}
 .banner span {
   font-family: Ubuntu;
-  color: #54b200;
+  color: #df6734;
   font-weight: 700;
 }
 .banner #banner-pager span {
@@ -877,7 +881,7 @@ h3 {
 .caption-banner .follow a {
   display: inline-block;
   vertical-align: top;
-  color: #e32b0c;
+  color: #ee993b;
   padding: 0.2em;
   font-size: 1.5em;
   margin-top: -20px;
@@ -945,6 +949,17 @@ h3 {
 }
 .tour {
   display: inline-block;
+  position: relative;
+}
+.tour > a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 77%;
+  z-index: 2;
 }
 .tour .img-frame {
   position: relative;
@@ -968,8 +983,8 @@ h3 {
   display: table;
   padding: 0 10px;
   width: 100%;
-  height: 56px;
-  background: #e32b0c;
+  height: 30px;
+  background: #df6734;
   color: #fff;
   text-align: center;
 }
@@ -1078,6 +1093,9 @@ h3 {
   padding-right: 0.5rem;
   color: turquesa;
 }
+.shuttle-ul a:hover {
+  color: #ee993b;
+}
 .shuttle .fleet {
   margin-top: 2rem;
 }
@@ -1086,7 +1104,7 @@ h3 {
 }
 .map-box h1 {
   text-transform: uppercase;
-  color: #54b200;
+  color: #df6734;
 }
 .map-box iframe {
   border: 10px solid #fff;
@@ -1099,7 +1117,7 @@ h3 {
 .form-book h1,
 .wpcf7 h1 {
   text-transform: uppercase;
-  color: #54b200;
+  color: #df6734;
 }
 .form-book p,
 .wpcf7 p {
@@ -1110,7 +1128,7 @@ h3 {
 .wpcf7 label {
   font-size: 14px;
   margin-bottom: 2px;
-  color: #e32b0c;
+  color: #483b27;
 }
 .form-book label.error,
 .wpcf7 label.error {
@@ -1150,7 +1168,7 @@ h3 {
 .wpcf7 .wpcf7-submit,
 .form-book input[type="submit"],
 .wpcf7 input[type="submit"] {
-  background: #e32b0c;
+  background: #483b27;
   border: none;
   clear: both;
   color: #fff;
@@ -1179,7 +1197,7 @@ h3 {
 }
 .form-book .mensaje .error,
 .wpcf7 .mensaje .error {
-  background: #e32b0c;
+  background: #df6734;
   border: 1px solid #eed3d7;
 }
 @media only screen and (min-width: 950px) {
@@ -1198,7 +1216,7 @@ h3 {
   width: 100%;
 }
 .wpcf7-not-valid-tip {
-  background-color: #e32b0c;
+  background-color: #df6734;
   color: #fff !important;
 }
 .select2-container {
@@ -1255,7 +1273,7 @@ h3 {
 }
 .box-message h5 {
   margin: 0;
-  color: #e32b0c;
+  color: #df6734;
   font-size: 14px;
   line-height: 18px;
 }
@@ -1277,7 +1295,7 @@ h3 {
 .redes a {
   display: inline-block;
   margin: 0.2em;
-  color: #e32b0c;
+  color: #483b27;
   font-size: 3em;
 }
 @media only screen and (min-width: 768px) {
@@ -1337,10 +1355,11 @@ h3 {
   width: 100%;
 }
 .banner-section {
-  height: 400px;
+  display: block;
+  height: 320px;
 }
 .banner-section .slide {
-  height: 400px;
+  height: 320px;
 }
 .tours-container {
   margin-bottom: 1rem;
@@ -1376,11 +1395,19 @@ h3 {
 }
 .pagination .page-numbers {
   color: #fff;
-  background-color: #e32b0c;
+  background-color: #df6734;
   padding: 0.5rem;
 }
 .pagination .page-numbers.current {
   background-color: #54b200;
+}
+@media only screen and (min-width: 900px) {
+  .banner-section {
+    height: 450px;
+  }
+  .banner-section .slide {
+    height: 450px;
+  }
 }
 @media only screen and (min-width: 1600px) {
   .banner-section {
@@ -1399,7 +1426,7 @@ h3 {
   }
 }
 .table thead tr {
-  background-color: #54b200;
+  background-color: #483b27;
   color: #fff;
 }
 .ul-include {

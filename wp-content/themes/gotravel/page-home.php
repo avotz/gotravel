@@ -22,7 +22,7 @@ get_header(); ?>
 	        <div class="slide" style="background-image: url('<?php echo get_template_directory_uri();  ?>/img/banner.jpg');">
 	            
 	                <div class="splash left">
-	                    <h2>Welcome to</h2>
+	                    <h2><a href="<?php echo esc_url( home_url( '/about-us' ) ); ?>">Welcome to</a></h2>
 	                    <span>Go Travel CRC</span>
 	                </div>
 	            
@@ -30,7 +30,7 @@ get_header(); ?>
 	         <div class="slide" style="background-image: url('<?php echo get_template_directory_uri();  ?>/img/banner2.jpg');">
 	            
 	                <div class="splash right">
-	                    <h2>Tours & Shuttle</h2>
+	                    <h2><a href="<?php echo esc_url( home_url( '/shuttle' ) ); ?>">Tours & Shuttle</a></h2>
 	                    <span>Choose your destination</span>
 	                </div>
 	            
@@ -38,7 +38,7 @@ get_header(); ?>
 	         <div class="slide" style="background-image: url('<?php echo get_template_directory_uri();  ?>/img/banner3.jpg');">
 	            
 	                <div class="splash right">
-	                    <h2>Contact us</h2>
+	                    <h2><a href="<?php echo esc_url( home_url( '/contact' ) ); ?>">Contact us</a></h2>
 	                    <span> and enjoy the adventure</span>
 	                </div>
 	            
@@ -116,6 +116,7 @@ get_header(); ?>
                                         </div>
                                     </div>
                                 </div>
+                                <a href="<?php the_permalink(); ?>"></a>
                             </div>
                           
                           

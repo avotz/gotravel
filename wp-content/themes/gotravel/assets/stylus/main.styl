@@ -6,9 +6,11 @@
 
 rosa = #E1477D
 gris = #858D93
+cafe = #483b27
+naranja = #ee993b
 verde = #54b200
 celeste = #00AECB
-rojo = #e32b0c
+rojo = #df6734
 
 *
 	box-sizing border-box
@@ -24,13 +26,13 @@ ul
 
 a 
 	text-decoration none
-	color verde
+	color cafe
 p 
 	margin-top 0
 h1
 h2
 h3
-	color verde
+	color rojo
 	text-transform uppercase
 .btn
 	display inline-block
@@ -58,7 +60,7 @@ h3
 	z-index 1000
 	padding 10px 0 17px
 	height 93px
-	border-top 6px solid verde
+	border-top 6px solid cafe
 	.inner
 		position relative
 		
@@ -83,8 +85,8 @@ h3
 		padding 0
 .logo 
 	float left 
-	margin 5px 5px 0 0
-	width 120px
+	margin -7px 5px 0 0
+	width 90px
 	height 60px
 	img 
 		width 100%
@@ -119,7 +121,8 @@ h3
 		&-btn-menu
 			display none
 	.logo 
-		margin 5px 35px 0 0
+		margin -5px 35px 0 0
+		width 120px
 	.menu
 		float left
 		position static
@@ -189,7 +192,7 @@ h3
 		font-size 1.5em
 		padding-right .5em
 		vertical-align  middle
-		color verde
+		color naranja
 	
 .banner
 	height 571px
@@ -225,9 +228,11 @@ h3
 		//font-family georgia
 		line-height 1em
 		margin 0
+	a 
+		color white
 	span 
 		font-family Ubuntu
-		color verde 
+		color rojo
 		font-weight 700
 
 	#banner-pager 
@@ -302,7 +307,7 @@ h3
 		a 
 			display inline-block
 			vertical-align top
-			color rojo
+			color #ee993b
 			padding .2em
 			font-size 1.5em
 			margin-top -20px
@@ -354,7 +359,16 @@ h3
 					//opacity: 0.7;
 .tour
 	display inline-block
-
+	position relative
+	> a 
+		position absolute
+		left 0
+		right 0
+		top 0
+		bottom 0
+		width 100%
+		height 77%
+		z-index 2
 	.img-frame
 		position relative
 		float left
@@ -379,7 +393,7 @@ h3
 			display table
 			padding 0 10px
 			width 100%//249px
-			height 56px
+			height 30px//56px
 			background rojo
 			color #FFF
 			text-align center
@@ -447,6 +461,9 @@ h3
 				font-family 'FontAwesome'
 				padding-right .5rem
 				color turquesa
+		a
+			&:hover
+				color naranja
 	.fleet
 		margin-top 2rem				
 .map-box
@@ -454,7 +471,7 @@ h3
 	width 100%
 	h1 
 		text-transform uppercase
-		color verde
+		color rojo
 	iframe 
 		border 10px solid #fff
 		width 100%
@@ -465,7 +482,7 @@ h3
 
 	h1 
 		text-transform uppercase
-		color verde
+		color rojo
 	p 
 		margin-bottom 6px
 		margin-top 0
@@ -475,7 +492,7 @@ h3
 		//display inline-block
 		font-size 14px
 		margin-bottom 2px
-		color rojo
+		color cafe
 
 	label.error
 		color $naranja
@@ -494,7 +511,7 @@ h3
 	
 	
 	.wpcf7-submit,input[type="submit"]
-		background rojo
+		background cafe
 		border none
 		clear both
 		color white
@@ -588,7 +605,7 @@ h3
 	a 
 		display inline-block
 		margin .2em
-		color rojo
+		color cafe
 		font-size 3em
 @media only screen and (min-width: 768px)
 	.copyright
@@ -628,9 +645,10 @@ h3
 	width 100%
 	
 .banner-section
-	height 400px
+	display block
+	height 320px//450px
 	.slide 
-		height 400px
+		height 320px//450px
 .tours-container
 	margin-bottom 1rem
 	display flex
@@ -651,6 +669,11 @@ h3
 		padding .5rem
 		&.current
 			background-color verde
+@media only screen and (min-width: 900px)
+	.banner-section
+		height 450px
+		.slide
+			height 450px
 @media only screen and (min-width: 1600px)
 	.banner-section
 		height 500px
@@ -665,7 +688,7 @@ h3
 .table
 	thead
 		tr
-			background-color verde
+			background-color cafe
 			color white
 .ul-include
 	font-size 12px
