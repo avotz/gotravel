@@ -13,6 +13,8 @@ get_header(); ?>
     	<div class="inner">
 
 		<?php
+		 rewind_posts(); 
+         query_posts( 'post_type=tour&orderby=title&order=ASC' ); 
 		if ( have_posts() ) : ?>
 
 			<header class="page-header">
