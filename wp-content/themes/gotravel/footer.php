@@ -19,12 +19,7 @@
             
             <div class="redes">
                 <a href="https://www.facebook.com/Go-Travel-Costa-Rica-1877673582476260/" class="facebook" target="_blank"><i class="icon icon-facebook"></i></a>
-                <a href="#" class="twitter" target="_blank"><i class="icon icon-twitter"></i></a>
-                <a href="#" class="google" target="_blank"><i class="icon icon-google-plus"></i></a>
-                <a href="#" target="_blank"><i class="icon icon-youtube"></i></a>
-                <a href="#" target="_blank"><i class="icon icon-pinterest"></i></a>
                 <a href="https://www.instagram.com/gotravelcr/" target="_blank"><i class="icon icon-instagram"></i></a>
-                <a href="#" target="_blank"><i class="icon icon-flickr"></i></a>
                 <a href="#" target="_blank"><i class="icon icon-tripadvisor"></i></a>
             </div>
             
