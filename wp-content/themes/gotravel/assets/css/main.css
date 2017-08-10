@@ -1039,6 +1039,38 @@ h3 {
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
+.about-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.facebook-box,
+.tripadvisor-box {
+  width: 100%;
+}
+@media only screen and (min-width: 950px) {
+  .facebook-box {
+    width: 540px;
+  }
+  .tripadvisor-box {
+    width: 380px;
+  }
+}
 .shuttle {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -1261,9 +1293,12 @@ h3 {
   float: left;
   margin: 0 26px -9px 0;
   padding: 13px 0 0 11px;
-  width: 120px;
+  width: 98px;
   height: 104px;
   vertical-align: middle;
+}
+.box-message img {
+  width: 100%;
 }
 .box-message .content {
   display: inline-block;
@@ -1496,6 +1531,9 @@ h3 {
   .form-two-columns .column {
     width: 45%;
   }
+}
+.widSSP {
+  width: 100% !important;
 }
 table {
   background-color: transparent;

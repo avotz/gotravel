@@ -175,11 +175,11 @@ get_header(); ?>
     <section class="section-bottom">
         <div class="inner box-message">
             <div class="image">
-                <img src="<?php echo get_template_directory_uri();  ?>/img/man.png" alt="man" />
+                <img src="<?php echo get_template_directory_uri();  ?>/img/ariel.jpg" alt="man" />
             </div>
             <div class="content">
-                <h5>Testimonial by Jane Doe, 14/7/2014</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni officiis sapiente illum sequi cum nam, repellendus reiciendis nihil quidem optio. Officiis minus libero magni ut ad, at quaerat quisquam a.</p>
+                <h5>Testimonial by Ariel A, 06/8/2017</h5>
+                <p>Llegar al aeropuerto y encontrar su nombre es muy fácil. Gracias a nuestro conductor Luis por un servicio precioso y muy agradable para explicar su país muy buen servicio. </p>
             </div>
         </div>
     </section>

@@ -20,7 +20,7 @@
             <div class="redes">
                 <a href="https://www.facebook.com/Go-Travel-Costa-Rica-1877673582476260/" class="facebook" target="_blank"><i class="icon icon-facebook"></i></a>
                 <a href="https://www.instagram.com/gotravelcr/" target="_blank"><i class="icon icon-instagram"></i></a>
-                <a href="#" target="_blank"><i class="icon icon-tripadvisor"></i></a>
+                <a href="https://www.tripadvisor.com/Attraction_Review-g309240-d12635600-Reviews-Go_Travel_Costa_Rica-Liberia_Province_of_Guanacaste.html" target="_blank"><i class="icon icon-tripadvisor"></i></a>
             </div>
             
         </div>
