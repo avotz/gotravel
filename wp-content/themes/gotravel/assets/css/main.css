@@ -1333,6 +1333,20 @@ h3 {
   color: #483b27;
   font-size: 3em;
 }
+.redes .facebook {
+  color: #3b5998;
+  margin: 0.2em 0.5em;
+}
+.redes .instagram {
+  color: #e13e60;
+}
+.redes .tripadvisor {
+  color: #00a680;
+}
+.redes .TA_rated {
+  display: inline-block;
+  vertical-align: middle;
+}
 @media only screen and (min-width: 768px) {
   .copyright {
     float: left;

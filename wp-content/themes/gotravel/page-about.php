@@ -27,7 +27,9 @@ get_header(); ?>
 					</ul>
 					</div>
 					<script src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=387&amp;locationId=12635600&amp;lang=en_US&amp;rating=true&amp;nreviews=4&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=true&amp;border=true&amp;display_version=2"></script>
-	               
+
+
+
 	            </div>
 	            <div class="tripadvisor-box">
 	               <?php
