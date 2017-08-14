@@ -886,6 +886,16 @@ h3 {
   font-size: 1.5em;
   margin-top: -20px;
 }
+.caption-banner .follow .facebook {
+  color: #3b5998;
+  padding: 0.4rem 0.8rem;
+}
+.caption-banner .follow .instagram {
+  color: #e13e60;
+}
+.caption-banner .follow .tripadvisor {
+  color: #00a680;
+}
 @media only screen and (min-width: 768px) {
   .banner {
     display: block;
@@ -1268,6 +1278,7 @@ h3 {
   color: #fff !important;
 }
 .section-bottom {
+  padding-top: 0.6rem;
   border-bottom: 9px solid #eceaea;
   font-family: Arial, Helvetica, sans-serif;
   background: -webkit-linear-gradient(top, #f8f9f9 0%, #efefef 100%) repeat scroll 0 0 rgba(0,0,0,0);
@@ -1547,6 +1558,9 @@ h3 {
   }
 }
 .widSSP {
+  width: 100% !important;
+}
+#CDSSCROLLINGRAVE.wide {
   width: 100% !important;
 }
 table {

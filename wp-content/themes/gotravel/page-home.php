@@ -56,16 +56,17 @@ get_header(); ?>
 	            <div class="follow">
 	                <span>Follow</span>
 	                Gotravel
-	                <a href="https://www.facebook.com/Go-Travel-Costa-Rica-1877673582476260/" target="_blank"><i class="icon icon-facebook"></i></a>
-	                <a href="https://www.instagram.com/gotravelcr/" target="_blank"><i class="icon icon-instagram"></i></a>
-	                <a href="#" target="_blank"><i class="icon icon-tripadvisor"></i></a>
+	                <a href="https://www.facebook.com/Go-Travel-Costa-Rica-1877673582476260/" target="_blank" class="facebook"><i class="icon icon-facebook"></i></a>
+	                <a href="https://www.instagram.com/gotravelcr/" target="_blank" class="instagram"><i class="icon icon-instagram"></i></a>
+	                <a href="https://www.tripadvisor.com/Attraction_Review-g309240-d12635600-Reviews-Go_Travel_Costa_Rica-Liberia_Province_of_Guanacaste.html" target="_blank" class="tripadvisor"><i class="icon icon-tripadvisor"></i></a>
+                    
 	            </div>
 	        </div>
 	    </div>
 	</section>
 	<section class="section-top">
         <div class="inner">
-
+        
             <div class="featured-tours">
                 <!-- <div class="pager">
                         <span class="prev "><i class="icon-angle-left"></i></span>
@@ -174,14 +175,22 @@ get_header(); ?>
     </section> -->
     <section class="section-bottom">
         <div class="inner box-message">
-            <div class="image">
+        <div id="TA_cdsscrollingravewide598" class="TA_cdsscrollingravewide">
+        <ul id="U50hVXeHp" class="TA_links VAL0HGh">
+        <li id="L5CMLEz9A" class="7jfGS4fUzy">
+        <a target="_blank" href="https://www.tripadvisor.com/"><img src="https://static.tacdn.com/img2/t4b/Stacked_TA_logo.png" alt="TripAdvisor" class="widEXCIMG" id="CDSWIDEXCLOGO"/></a>
+        </li>
+        </ul>
+        </div>
+        <script src="https://www.jscache.com/wejs?wtype=cdsscrollingravewide&amp;uniq=598&amp;locationId=12635600&amp;lang=en_US&amp;border=true&amp;shadow=false&amp;backgroundColor=white&amp;display_version=2"></script>
+            <!-- <div class="image">
                 <img src="<?php echo get_template_directory_uri();  ?>/img/ariel.jpg" alt="man" />
             </div>
             <div class="content">
                 <h5>Testimonial by Ariel A, 06/8/2017</h5>
                 <p>Llegar al aeropuerto y encontrar su nombre es muy fácil. Gracias a nuestro conductor Luis por un servicio precioso y muy agradable para explicar su país muy buen servicio. </p>
             </div>
-        </div>
+        </div> -->
     </section>
 	
 
