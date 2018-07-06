@@ -14,7 +14,7 @@ var gulp        = require('gulp'),
           /*server: {
             baseDir: "./"
           }*/
-          proxy: "gotravel.dev"
+          proxy: "gotravel.test"
       });
       
   });

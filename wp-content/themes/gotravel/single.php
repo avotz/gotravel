@@ -90,17 +90,24 @@ get_header(); ?>
 			
 			if ( 'tour' === get_post_type() ) :
 				get_template_part( 'template-parts/content', 'tour' );
-			else:
-				get_template_part( 'template-parts/content', get_post_format() );
+			else:?>
+			   <div class="blog-container flex-container-sb">
+					<div class="blog-info">
+						<?php
+						get_template_part( 'template-parts/content', get_post_format() );
 
-				the_post_navigation();
+						the_post_navigation();
 
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-				get_sidebar();
-			endif; 
+						// If comments are open or we have at least one comment, load up the comment template.
+						if ( comments_open() || get_comments_number() ) :
+							comments_template();
+						endif; ?>
+					</div>
+					<div class="blog-sidebar">
+						<?php get_sidebar(); ?>
+					</div>
+				</div>
+			<?php endif; 
 			
 
 
